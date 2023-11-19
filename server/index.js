@@ -22,6 +22,7 @@ app.use(express.static(path.join(projectRoot, 'client/public')));
 
 // Define HomePage path
 const homePage = path.join(projectRoot, "client/public/index.html");
+<<<<<<< HEAD
 // Define confirmation page path
 const confirmationPage = path.join(projectRoot, "client/public/confirmation.html");
 
@@ -37,11 +38,14 @@ const generateQRCode = (req, res, next) => {
     });
     next();
 };
+=======
+>>>>>>> fb97ab53af2c62146133cf6875f854da9b507176
 
 app.get("/", (req, res) => {
     res.sendFile(homePage);
 });
 
+<<<<<<< HEAD
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post("/submit", (req, res, next) => {
@@ -55,6 +59,8 @@ app.post("/submit", (req, res) => {
     res.sendFile(confirmationPage);
 });
 
+=======
+>>>>>>> fb97ab53af2c62146133cf6875f854da9b507176
 // Set-up localholst
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
