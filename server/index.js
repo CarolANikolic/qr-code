@@ -55,7 +55,7 @@ app.post("/submit", (req, res) => {
     res.sendFile(confirmationPage);
 });
 
-// Set-up localholst
+// Set-up localhost
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
