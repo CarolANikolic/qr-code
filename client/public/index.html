@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./global.css"/>
     <title>Easy QR Generator</title>
 </head>
 <body>
-    <div>
-        <h1>Easy QR: An Easy way to generate QR</h1>
-        <img src="/images/default-img.png" alt="default QR image"/>
-    </div>
-    <form action="/submit" method="POST">
-        <label for="URL">Enter the URL</label>
-        <input type="url" name="URL" required></input>
-        <p>Your QR code will open this URL.</p>
-        <input type="submit" value="Submit"></input>
-    </form>
+    <main>
+        <div class="containers-position">
+            <h1 class="containers-position__title">Easy QR: An Easy way to generate QR Code</h1>
+            <img class="containers-position__img" src="/images/default-img.png" alt="default QR image"/>
+        </div>
+        <form class="containers-position" action="/submit" method="POST">
+            <label class="containers-position__label" for="URL">Enter the URL</label>
+            <input class="containers-position__urlInput" type="url" name="URL" required></input>
+            <p class="containers-position__inputInfo">Your QR code will lead to this URL.</p>
+            <input class="containers-position__button" type="submit" value="Generate QR"></input>
+        </form>
+    </main>
 </body>
 </html>
