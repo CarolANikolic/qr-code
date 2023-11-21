@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./global.css"/>
     <title>Easy QR Generator</title>
 </head>
 <body>
-    <div>
-        <h1>QR Code Generated Successfully</h1>
-        <img id="qr-image" src="/images/outputQR/qr-img.png" alt="generated QR image"/>
-        <a href="/images/outputQR/qr-img.png" download="qr-image">
-            <button>Download the QR Code</button>
-        </a>
-    </div>
+    <main>
+        <div class="containers-position">
+            <h1 class="containers-position__title">QR Code Generated Successfully!</h1>
+            <img class="containers-position__generated-qr-image" id="qr-image" src="/images/outputQR/qr-img.png" alt="generated QR image"/>
+            <div class="containers-position__div">
+                <a href="/index.html">
+                    <button class="containers-position__button containers-position__button-home">Go Back</button>
+                </a>
+                <a href="/images/outputQR/qr-img.png" download="qr-image">
+                    <button class="containers-position__button containers-position__button-download">Download QR Code</button>
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
