@@ -10,7 +10,8 @@ The design is also created by me and it takes account for a mobile-first workflo
 
 To watch a demonstration of the project, you can download the video file:
 
-[Download Video](qr-code-runnning.mp4)
+[![Watch the Video](easy-qr-screenshot.png)](qr-code-runnning.mp4)
+
 
 ## Development Process
 
